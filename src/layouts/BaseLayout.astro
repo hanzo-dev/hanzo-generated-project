@@ -1,0 +1,25 @@
+---
+const { title = "Simple Astro Blog" } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <header>
+      <h1>My Astro Blog</h1>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/blog">Blog</a>
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer>
+      <p>© 2023 Astro Blog</p>
+    </footer>
+  </body>
+</html>
